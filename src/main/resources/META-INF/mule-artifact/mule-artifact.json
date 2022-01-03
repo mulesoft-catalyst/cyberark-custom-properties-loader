@@ -1,0 +1,26 @@
+{
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE",
+  "extensionModelLoaderDescriptor": {
+    "id": "crafted",
+    "attributes": {
+      "type": "com.mulesoft.cyberark.custom.properties.loader.api.CyberarkConfigurationPropertiesExtensionLoadingDelegate"
+    }
+  },
+  "name": "cyberark-custom-properties-loader",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [
+        "com.mulesoft.cyberark.custom.properties.loader.api"
+      ],
+      "exportedResources": [
+        "META-INF/services/org.mule.runtime.config.api.dsl.model.properties.ConfigurationPropertiesProviderFactory"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
