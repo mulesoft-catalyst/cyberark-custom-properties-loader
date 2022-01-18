@@ -87,7 +87,10 @@ Configure the AMQP Connector as
 	</amqp:config>
 ```
 
-### Contributors
-Abdul Mohammed
+### Limitations
+* When the password is rotated in Cyberark, it will not be propagated until the mule app is restarted.
+* This is not an issue for the AMQP Connector since it maintains the old connection even after the password is changed and is still active for performing any queue operations on the MQ Server.
+* However, if there is a company policy to only utilize the latest password, then all the mule apps have to be restarted.
+
 
 
